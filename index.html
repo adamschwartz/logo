@@ -4,7 +4,7 @@
     color: #191919
   }
 
-  svg {
+  div, svg {
     position: fixed;
     top: 0;
     left: 0;
@@ -16,12 +16,14 @@
 
 <script>
   if (location.search.match(/fade/)) {
-    document.querySelector('[styles]').innerHTML += '@keyframes fade { to { opacity: 0 } } html { animation: fade 300s linear forwards }'
+    document.querySelector('[styles]').innerHTML += '@keyframes fade { to { opacity: 0 } } div { animation: fade 5s linear forwards }'
   }
 </script>
 
-<svg width="340px" height="190px" viewBox="0 0 222 127" fill="currentColor">
-  <path d="M87.1 117C73.6 117 62.8 108.7 63 99 63.2 89.3 74.2 81.6 87.7 81.8 95.2 82 101.8 84.5 106.2 88.4 106.3 88.3 140.7 25.5 140.7 25.5L162.4 10 112.4 102.2C112 102.8 105 117 87.1 117Z"></path>
-  <path d="M56 20L56 36.6 32 59 56 80 56 98 10 59 56 20 56 20Z"></path>
-  <path d="M166 37L190 59 166 80 166 98 212 59 166 20 166 37 166 37Z"></path>
-</svg>
+<div>
+  <svg width="340px" height="190px" viewBox="0 0 222 127" fill="currentColor">
+    <path d="M87.1 117C73.6 117 62.8 108.7 63 99 63.2 89.3 74.2 81.6 87.7 81.8 95.2 82 101.8 84.5 106.2 88.4 106.3 88.3 140.7 25.5 140.7 25.5L162.4 10 112.4 102.2C112 102.8 105 117 87.1 117Z"></path>
+    <path d="M56 20L56 36.6 32 59 56 80 56 98 10 59 56 20 56 20Z"></path>
+    <path d="M166 37L190 59 166 80 166 98 212 59 166 20 166 37 166 37Z"></path>
+  </svg>
+</div>
