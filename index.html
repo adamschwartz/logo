@@ -1,4 +1,4 @@
-<style>
+<style styles>
   html {
     background: #000;
     color: #191919
@@ -10,9 +10,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto
   }
 </style>
+
+<script>
+  if (location.search.match(/fade/)) {
+    document.querySelector('[styles]').innerHTML += '@keyframes fade { to { opacity: 0 } } html { animation: fade 3s linear forwards }'
+  }
+</script>
 
 <svg width="340px" height="190px" viewBox="0 0 222 127" fill="currentColor">
   <path d="M87.1 117C73.6 117 62.8 108.7 63 99 63.2 89.3 74.2 81.6 87.7 81.8 95.2 82 101.8 84.5 106.2 88.4 106.3 88.3 140.7 25.5 140.7 25.5L162.4 10 112.4 102.2C112 102.8 105 117 87.1 117Z"></path>
